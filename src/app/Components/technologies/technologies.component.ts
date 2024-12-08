@@ -1,9 +1,10 @@
+import { NgFor } from '@angular/common';
 import { Component } from '@angular/core';
 
 @Component({
   selector: 'app-technologies',
   standalone: true,
-  imports: [],
+  imports: [NgFor ],
   templateUrl: './technologies.component.html',
   styleUrl: './technologies.component.css'
 })
@@ -28,5 +29,6 @@ export class TechnologiesComponent {
     'Installation & troubleshooting of hardware and replacement of desktop/laptop parts.',
     'All laptop formatting services.',
   ];
+skills: any;
 
 }
