@@ -10,11 +10,14 @@
   }
   
   .insta,
-  .whatsapp,
-  .you {
+  .whatsapp{
     width: 50px;
     height: 50px;
     margin: 0 10px;
     cursor: pointer;
   }
-  
+  .you{
+    width:70px;
+    margin-top:0px; 
+    margin: -4px 9%;  
+}

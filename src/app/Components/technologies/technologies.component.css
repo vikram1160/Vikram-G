@@ -1,0 +1,47 @@
+.body {
+    font-family: Arial, sans-serif;
+    padding: 20px;
+  }
+  
+  .skills {
+    max-width: 800px;
+    margin: auto;
+    text-align: left;
+  }
+  
+  .h1, .h2, .h3 {
+    text-align: center;
+  }
+  
+  .skill {
+    margin: 10px 0;
+  }
+  
+  .skill-name {
+    font-weight: bold;
+  }
+  
+  .skill-bar {
+    background: #e0e0e0;
+    border-radius: 10px;
+    overflow: hidden;
+    margin: 5px 0;
+  }
+  
+  .skill-per {
+    height: 20px;
+    background: orange;
+    border-radius: 10px;
+    text-align: right;
+    padding: 0 10px;
+    color: white;
+    line-height: 20px;
+  }
+  
+  .sona {
+    padding: 10px;
+    background: #f9f9f9;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+  }
+  

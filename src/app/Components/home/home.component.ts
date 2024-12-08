@@ -2,10 +2,13 @@ import { Component } from '@angular/core';
 
 @Component({
   selector: 'app-home',
+  standalone: true,
+  imports: [],
   templateUrl: './home.component.html',
-  styleUrls: ['./home.component.css'],
+  styleUrl: './home.component.css'
 })
 export class HomeComponent {
+  title = 'vikramApp';
   resumePath: string = '.assets/resume.pdf';
   whatsappMessage: string = 'https://wa.me/917887589262?text=I want to hire you';
   socialLinks = {
@@ -20,4 +23,3 @@ export class HomeComponent {
     link.click();
   }
 }
-

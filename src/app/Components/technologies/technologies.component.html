@@ -1,0 +1,17 @@
+<section>
+    <div class="skills">
+        <h1 class="h1">My Skills</h1>
+        <h2 class="h2">* Technical Skills *</h2>
+      
+        <!-- Technical Skills -->
+        <div class="skill" *ngFor="let skill of skills">
+          <div class="skill-name">
+            <span style="color: Orange">{{ skill.HTML }}</span>
+          </div>
+          <div class="skill-bar">
+            <div class="skill-per" [style.maxWidth]="skill.percentage"></div>
+          </div>
+        </div>
+      </div>
+      
+</section>
