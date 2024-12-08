@@ -4,16 +4,20 @@
     <button  class="navbar-toggler" (click)="toggleNavbar()" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation" >
       <span class="navbar-toggler-icon"></span>  
     </button>
-    <div  class="collapse navbar-collapse" id="navbarSupportedContent">
+    <div
+    class="collapse navbar-collapse"
+    [ngClass]="{ show: showNavbar }"
+    id="navbarSupportedContent"
+  >
       <ul class="navbar-nav me-auto mb-2 mb-lg-0">
         <li class="nav-item">
-          <a class="nav-link active" aria-current="page" routerLink="">Home</a>
+          <a class="nav-link active" aria-current="page" routerLink="" (click)="toggleNavbar()">Home</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link"routerLink="/education">Education</a>
+          <a class="nav-link"routerLink="/education" (click)="toggleNavbar()">Education</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link"routerLink="/techno">Technologies</a>
+          <a class="nav-link"routerLink="/techno" (click)="toggleNavbar()">Technologies</a>
         </li>
       </ul>
       <form class="d-flex" role="search">
