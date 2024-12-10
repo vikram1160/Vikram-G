@@ -7,6 +7,10 @@
   margin: auto;
 }
 
+.bg-info{
+  width: 100%;
+}
+
 h2,
 h5 {
   margin: 0;

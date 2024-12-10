@@ -1,17 +1,79 @@
-<section>
-    <div class="skills">
-        <h1 class="h1">My Skills</h1>
-        <h2 class="h2">* Technical Skills *</h2>
-      
-        <!-- Technical Skills -->
-        <div class="skill" *ngFor="let skill of skills">
-          <div class="skill-name">
-            <span style="color: Orange">{{ skill.HTML }}</span>
-          </div>
-          <div class="skill-bar">
-            <div class="skill-per" [style.maxWidth]="skill.percentage"></div>
-          </div>
-        </div>
+<div class="bg-dark">
+
+  <div class="sto">
+     My Skills
+  </div>
+
+  
+  <div class="all">
+
+    <div class="skill ">
+      <div class="skill-name">
+        <span style="color: Orange;">HTML</span>
       </div>
+      <div class="skill-bar">
+        <div class="skill-per" [attr.per]="'80%'" [style.max-width.%]="80"></div>
+      </div>
+    </div>
+  
+  
+    <div class="skill">
+      <div class="skill-name">
+        <span style="color: Orange;">CSS</span>
+      </div>
+      <div class="skill-bar">
+        <div class="skill-per" [attr.per]="'70%'" [style.max-width.%]="70"></div>
+      </div>
+    </div>
       
-</section>
+  
+    <div class="skill">
+      <div class="skill-name">
+        <span style="color: Orange;">JAVASCRIPT</span>
+      </div>
+      <div class="skill-bar">
+        <div class="skill-per" [attr.per]="'60%'" [style.max-width.%]="60"></div>
+      </div>
+    </div>
+  
+  
+  
+    <div class="skill">
+      <div class="skill-name">
+        <span style="color: Orange;">BOOTSTRAP</span>
+      </div>
+      <div class="skill-bar">
+        <div class="skill-per" [attr.per]="'65%'" [style.max-width.%]="65"></div>
+      </div>
+    </div>
+
+    <div class="skill">
+      <div class="skill-name">
+        <span style="color: Orange;">ANGULAR</span>
+      </div>
+      <div class="skill-bar">
+        <div class="skill-per" [attr.per]="'60%'" [style.max-width.%]="60"></div>
+      </div>
+    </div>
+
+
+    <div class="skill">
+      <div class="skill-name">
+        <span style="color: Orange;">REACT</span>
+      </div>
+      <div class="skill-bar">
+        <div class="skill-per" [attr.per]="'48%'" [style.max-width.%]="48"></div>
+      </div>
+    </div>
+
+    <div class="skill">
+      <div class="skill-name">
+        <span style="color: Orange;">JAVA</span>
+      </div>
+      <div class="skill-bar">
+        <div class="skill-per" [attr.per]="'30%'" [style.max-width.%]="30"></div>
+      </div>
+    </div>
+  
+  
+  

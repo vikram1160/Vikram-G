@@ -1,47 +1,131 @@
-.body {
-    font-family: Arial, sans-serif;
-    padding: 20px;
-  }
+*{
+  margin: 0;
+  padding: 0;
+  font-family: "ubuntu", sans-serif;
+  box-sizing: border-box;
+}
+.sto{
+  color: white;
+  font-size: 30px;
+  margin-left: 100px;
+  color: chartreuse;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
   
-  .skills {
-    max-width: 800px;
-    margin: auto;
-    text-align: left;
+}
+.all{
+  margin-left: 19px;
+}
+.bg-dark{
+  min-height: 1000px ;
+  flex-wrap: wrap-reverse;
+  margin-bottom: 100px;
+
+
+  /* margin-bottom: -3vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap-reverse;
+  background: #0f0000; */
+}
+.skills{
+  width: 100%;
+  max-width: 600%;
+  padding: 0 20px;
+  flex-wrap: wrap;
+
+}
+.skill-name{
+  font-size: 18px;
+  font-weight: 700;
+  color: #f1f1f1;
+  text-transform: uppercase;
+  margin: 20px 0;
+}
+.skill-bar{
+  height: 14px;
+  background: #282828;
+  border-radius: 3px;
+}
+.skill-per{
+  height: 14px;
+  background: #e70891;
+  border-radius: 3px;
+  position: relative;
+  animation: fillBars 2.5s 1;
+}
+.skill-per:before{
+  content: attr(per);
+  position: absolute;
+  padding: 4px 6px;
+  background: #f1f1f1;
+  border-radius: 4px;
+  font-size: 12px;
+  top: -37px;
+  right: 0;
+  transform: translateX(50%); 
+}
+.skill-per:after{
+  content: "";
+  position: absolute;
+  width: 10px;
+  height: 10px;
+  background:#f1f1f1;
+  top: -16px;
+  right: 0;
+  transform :translateX(50%) rotate(45deg);
+  border-radius: 2px;
+}
+@keyframes fillBars{
+  from{
+      width: 0;
   }
-  
-  .h1, .h2, .h3 {
-    text-align: center;
+  to{
+      width: 100%;
   }
-  
-  .skill {
-    margin: 10px 0;
+}
+.h1{
+  font-size: 25px;
+  font-weight: 700;
+  color: #f1f1f1;
+  text-transform: uppercase;
+  margin: 20px 0; 
+  margin-left: 100px;
+  font-family: system-ui;
+  color: rgb(10, 162, 232);
+  margin-top: -170px;
+}
+.h2{
+  font-size: 25px;
+  font-weight: 700;
+  color: #f1f1f1;
+  text-transform: uppercase;
+  margin: 20px 0; 
+  margin-left: 75px;
+  font-family: system-ui;
+  color: rgb(16, 204, 38);
+  margin-top:1px;
+}
+.h3 {
+  font-size:24px;
+  font-weight: 700;
+  color: #f1f1f1;
+  text-transform: uppercase;
+  margin: 20px 0; 
+  margin-left: 75px;
+  font-family: system-ui;
+  color: rgb(8, 206, 255);
+  margin-top: 10vw;
+}
+.sona{
+  font-size: 25px;
+  font-weight: 700;
+  color: #f1f1f1;
+   width:90vw ;
+   
+}
+@media (max-width:750px ){
+  .body{
+     min-height: 1630px
   }
-  
-  .skill-name {
-    font-weight: bold;
-  }
-  
-  .skill-bar {
-    background: #e0e0e0;
-    border-radius: 10px;
-    overflow: hidden;
-    margin: 5px 0;
-  }
-  
-  .skill-per {
-    height: 20px;
-    background: orange;
-    border-radius: 10px;
-    text-align: right;
-    padding: 0 10px;
-    color: white;
-    line-height: 20px;
-  }
-  
-  .sona {
-    padding: 10px;
-    background: #f9f9f9;
-    border: 1px solid #ddd;
-    border-radius: 5px;
-  }
-  
+}
